@@ -96,10 +96,6 @@ int main(int argc, char* argv[]) {
   cli.RegisterGenerator("--objc_out", "--objc_opt", &objc_generator,
                         "Generate Objective C header and source.");
 
-  // JavaScript
-  google::protobuf::compiler::js::Generator js_generator;
-  cli.RegisterGenerator("--js_out", &js_generator,
-                        "Generate JavaScript source.");
 #endif  // !OPENSOURCE_PROTOBUF_CPP_BOOTSTRAP
 
   return cli.Run(argc, argv);
